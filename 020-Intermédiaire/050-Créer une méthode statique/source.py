@@ -4,8 +4,9 @@ Joyeux anniversaire,
 Joyeux anniversaire {prenom},
 Joyeux anniversaire."""
 
-    def chante_pour():
-        pass
+    @classmethod
+    def chante_pour(cls, prenom):
+        return cls.paroles.format(prenom=prenom)
 
 
 print(Chanson.chante_pour(prenom="Paul"))
